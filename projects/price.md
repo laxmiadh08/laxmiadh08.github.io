@@ -703,7 +703,7 @@ footer a {
             alt="Hospital Comparison"
             class="project-image"/>
             </div>
-            <p>Trend Line: Black, Ratio Line: Purple</p>
+           
 
       <h2 style="margin-top:28px;margin-bottom:0px; font-weight:700">25 Most expensive procedures by hospital </h2>
 <div class="img-frame" style="margin-top:8px;">
