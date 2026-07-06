@@ -527,7 +527,7 @@ footer a {
     <span class="section-eyebrow">Background</span>
   
     <p class="section-body">
-      <i>Since 2021, the CMS Hospital Price Transparency Rule requires every U.S. hospital to publish machine-readable files disclosing their gross charges, cash prices, and payer-negotiated rates. In practice, these files arrive in incompatible formats — some wide with hundreds of payer columns, others long with one row per payer — making cross-hospital comparison nearly impossible without significant data engineering.</i>
+  <i>Since 2021, the CMS Hospital Price Transparency Rule requires every U.S. hospital to publish machine-readable files disclosing their gross charges, cash prices, and payer-negotiated rates. In practice, these files arrive in incompatible formats, somewith hundreds of payer columns, others long with one row per payer, making cross-hospital comparison difficult.</i>
     </p>
     <p class="section-body">
    The original hospital pricing files contained 7,230,075 records combined for three hospitals. For this analysis, the data was narrowed to 49 high-impact healthcare procedures spanning inpatient, outpatient, emergency, laboratory, and pharmacy services, resulting in a curated dataset of approximately 6,681 records optimized for cross-hospital price comparisons.
