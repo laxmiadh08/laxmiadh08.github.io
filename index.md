@@ -291,6 +291,10 @@ body {
   background: var(--coral);
   color: var(--white);
 }
+  .connect-btn.primary-blue {
+  background:#0e76a8;
+  color: var(--white);
+}
 
 .connect-btn.secondary {
   background: var(--white);
@@ -435,11 +439,14 @@ body {
   <span class="section-title">Contact</span>
   <!-- <h2 class="section-title">Let's Connect</h2> -->
   <div class="connect-row">
-    <a class="connect-btn primary" href="https://www.linkedin.com/in/laxmiadh/" target="_blank">
-      LinkedIn ↗
+    <a class="connect-btn primary-blue" href="https://www.linkedin.com/in/laxmiadh/" target="_blank">
+      LinkedIn
     </a>
     <a class="connect-btn secondary" href="https://github.com/laxmiadh08" target="_blank">
-      GitHub ↗
+      GitHub
+    </a>
+     <a class="connect-btn secondary" href="/assets/Resume/Adhikari_Laxmi_Resume.pdf" target="_blank">
+      Resume 
     </a>
   </div>
 </div>
