@@ -266,14 +266,16 @@ body {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
+  justify-content:end;
+  
 }
 
 .connect-btn {
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 0.88rem;
   font-weight: 700;
-  padding: 11px 22px;
+  padding: 6px 16px;
   border-radius: 7px;
   text-decoration: none;
   transition: opacity 0.18s, transform 0.18s;
@@ -332,6 +334,19 @@ body {
     <p class="home-about">
       I enjoy making sense of complex information and finding patterns. My background in business analysis, UX design, and business analytics has shaped a structured and detail-oriented approach to problem solving. Outside of analytics, hiking is my favorite way to disconnect and recharge.
     </p>
+
+  <div class="connect-row">
+    <a class="connect-btn primary-blue" href="https://www.linkedin.com/in/laxmiadh/" target="_blank">
+      LinkedIn
+    </a>
+    <a class="connect-btn secondary" href="https://github.com/laxmiadh08" target="_blank">
+      GitHub
+    </a>
+     <a class="connect-btn primary" href="/assets/Resume/Adhikari_Laxmi_Resume.pdf" target="_blank">
+      Resume 
+    </a>
+  </div>
+  
     <div class="home-tech-stack">
       <span class="tech-pill">Python</span>
       <span class="tech-pill">Power BI</span>
@@ -341,6 +356,7 @@ body {
       <span class="tech-pill">Star Schema</span>
       <span class="tech-pill">Excel</span>
     </div>
+    
   </div>
 </div>
 
@@ -356,21 +372,20 @@ body {
   <div class="project-card">
     <!-- <img src="/images/price-transparency/thumb1.png" alt="Healthcare Pricing Dashboard"> -->
 
-    <div class="project-card-body">
+  <div class="project-card-body">
       <h3 class="project-card-title">Healthcare Pricing Disparities</h3>
 
-      <p class="project-card-desc">
+   <p class="project-card-desc">
         Analyzed negotiated rates, cash prices, and gross charges across 3 major Louisville hospitals — uncovering payer negotiation gaps, and transparency failures.
       </p>
 
-      <div class="project-card-tags">
+   <div class="project-card-tags">
         <span class="tag">Power BI</span>
         <span class="tag">Python</span>
         <span class="tag">Star Schema</span>
         <span class="tag">DAX</span>
       </div>
-
-      <span class="project-card-view">
+    <span class="project-card-view">
         View Project →
       </span>
     </div>
