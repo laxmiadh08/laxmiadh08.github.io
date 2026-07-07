@@ -639,7 +639,7 @@ footer a {
     <span class="section-eyebrow">Analysis</span>
     <h2 class="section-title">Business Questions:</h2>
 
-    <ul class="bq-list">
+   <ul class="bq-list">
       <li class="bq-item">
         <span class="bq-text">Which hospital charges the highest gross charge for the same CPT code and how does their negotiated rate compare to competitors?</span>
       </li>
@@ -647,13 +647,13 @@ footer a {
         <span class="bq-text">For which procedures does the negotiated rate exceed the gross charge and which payers and hospitals are involved?</span>
       </li>
       <li class="bq-item">
-        <span class="bq-text">Which payer consistently negotiates the lowest rates, and which plan type (Medicare Advantage, Commercial, Managed Medicaid) gets the deepest discount?</span>
+        <span class="bq-text">Which payer consistently negotiates the lowest rates, and which plan type gets the deepest discount?</span>
       </li>
       <li class="bq-item">
         <span class="bq-text">How does the cash price compare to the minimum negotiated rate are uninsured patients paying more than the best-insured patients?</span>
       </li>
       <li class="bq-item">
-        <span class="bq-text">Which procedures show the widest min-to-max negotiated rate spread, indicating the most volatile or inconsistent payer contracting?</span>
+        <span class="bq-text">Which procedures show the widest min-to-max negotiated rate spread?</span>
       </li>
       <li class="bq-item">
         <span class="bq-text">How complete is each hospital's gross charge disclosure and does incomplete disclosure correlate with higher negotiated rates?</span>
@@ -683,7 +683,7 @@ footer a {
     <span class="section-eyebrow">Analysis: Key Findings</span>
 
 
-      <div class="finding-card insight">
+  <div class="finding-card insight">
         <div class="finding-title">Cash Patients Pay $1,800 More Than Best Payer Rate</div>
         <div class="finding-body">
           On average, the minimum payer-negotiated rate across all procedures is $1,800 lower than the cash price charged to uninsured patients. For the highest-cost procedures, this gap widens dramatically, uninsured patients face not the gross charge sticker price, but a cash price that still substantially exceeds what even the most expensive insurer pays.
@@ -691,28 +691,27 @@ footer a {
         <div class="finding-stat">$1,800 avg premium for uninsured</div>
       </div>
   
-     <h2 style="margin-top:16px;margin-bottom:0px; font-weight:700">Price Transparency Gap </h2>
+   <h2 style="margin-top:16px;margin-bottom:0px; font-weight:700">Price Transparency Gap </h2>
     <div class="img-frame" style="margin-top:8px;">
         <img src="/images/price-transparency/price-gap.png?raw=true"
         alt="Hospital Comparison"
         class="project-image"/>
     </div>
     
-     <div class="img-frame" style="margin-top:8px;">
+  <div class="img-frame" style="margin-top:8px;">
             <img src="/images/price-transparency/comparison-price-gap.png?raw=true"
             alt="Hospital Comparison"
             class="project-image"/>
-            </div>
+    </div>
            
-
-      <h2 style="margin-top:28px;margin-bottom:0px; font-weight:700">25 Most expensive procedures by hospital </h2>
+  <h2 style="margin-top:28px;margin-bottom:0px; font-weight:700">25 Most expensive procedures by hospital </h2>
 <div class="img-frame" style="margin-top:8px;">
         <img src="/images/price-transparency/expensive-gross.png?raw=true"
         alt="Hospital Comparison"
         class="project-image"/>
         </div>
 
-        <h2 style="margin-top:28px;margin-bottom:0px; font-weight:700">Gross charge and Average Negotiated Rates overview </h2>
+  <h2 style="margin-top:28px;margin-bottom:0px; font-weight:700">Gross charge and Average Negotiated Rates overview </h2>
     <div class="img-frame" style="margin-top:8px;">
             <img src="/images/price-transparency/3_comparison.png?raw=true"
             alt="Hospital Comparison"
@@ -732,9 +731,9 @@ footer a {
           Norton Hospital's procedures (CPT codes 291, 292, 193, 310, 603, 872) cluster tightly along the diagonal reference line across the $10K–$40K gross charge range. Payers are achieving minimal discounts off Norton's list price.
         </div>
         
-      </div>
+   </div>
       
-      <div class="finding-card good">
+  <div class="finding-card good">
         <div class="finding-title">CPT 470:74% Discount on Joint Replacement</div>
         <div class="finding-body">
           CPT 470 (Major Joint Replacement - hip/knee) at Baptist Health shows the deepest payer discount in the dataset. With a gross charge of $122,570 and an average negotiated rate of $31,844, payers achieved approximately a 74% reduction from list price.
@@ -745,7 +744,7 @@ footer a {
 
         
 
-      <div class="finding-card warning">
+  <div class="finding-card warning">
         <div class="finding-title">18% Gross Charge Non-Disclosure at Norton &amp; UofL</div>
         <div class="finding-body">
           Baptist Health disclosed gross charges for 100% of procedure rows. Norton Hospital disclosed 83.24% and UofL Health 82.16%, leaving approximately 1 in 6 rows without a gross charge.
@@ -755,7 +754,7 @@ footer a {
 
       
  
- 
+
 <div class="finding-card flag">
         <div class="finding-title">CPT 470 Skews All Hospital-Level Averages</div>
         <div class="finding-body">
