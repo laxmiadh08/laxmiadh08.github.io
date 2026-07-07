@@ -259,7 +259,7 @@ body {
 .connect-section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 64px 32px 72px;
+  padding: 54px 32px 72px;
 }
 
 .connect-row {
@@ -270,13 +270,22 @@ body {
   justify-content:end;
   
 }
+  .connect-row-b {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+  
+}
+
 
 .connect-btn {
   font-family: system-ui, -apple-system, sans-serif;
-  font-size: 0.88rem;
-  font-weight: 700;
-  padding: 6px 16px;
-  border-radius: 7px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 4px;
   text-decoration: none;
   transition: opacity 0.18s, transform 0.18s;
   display: inline-flex;
@@ -453,7 +462,7 @@ body {
 <div class="connect-section">
   <span class="section-title">Contact</span>
   <!-- <h2 class="section-title">Let's Connect</h2> -->
-  <div class="connect-row">
+  <div class="connect-row-b">
     <a class="connect-btn primary-blue" href="https://www.linkedin.com/in/laxmiadh/" target="_blank">
       LinkedIn
     </a>
