@@ -135,7 +135,7 @@ nav a.nav-link:hover { color: var(--coral); }
 
 /*HERO */
 .hero {
-  background: var(--navy);
+  background:#37332f;
   /* background-image:
     linear-gradient(to bottom, rgba(10,15,30,0.55) 0%, rgba(10,15,30,0.88) 60%, rgba(10,15,30,1) 100%),
     url('dashboard-overview.png'); */
@@ -144,7 +144,7 @@ nav a.nav-link:hover { color: var(--coral); }
   padding: 32px 0 32px;
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
-.hero-inner { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+.hero-inner { max-width: 1100px; margin: 0 auto; padding: 0 32px; text-align:center; }
 .hero-tag {
   display: inline-flex;
   align-items: center;
@@ -164,7 +164,7 @@ nav a.nav-link:hover { color: var(--coral); }
 .hero-tag::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--coral); }
 .hero h1 {
   font-family: system-ui, -apple-system, sans-serif;
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-size: clamp(2.2rem, 5vw, 2.6rem);
   font-weight: 900;
   color: var(--white);
   letter-spacing: -0.03em;
@@ -213,10 +213,8 @@ nav a.nav-link:hover { color: var(--coral); }
   margin-top:1rem!important;
 }
 .section-title-white {
-  font-family: system-ui, sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 800;
-  letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 16px;
 }
@@ -546,7 +544,7 @@ footer a {
   <div class="hero-inner">
     <h1>Price Transparency<br />in <em>Healthcare</em></h1>
     <p class="hero-lead">
-      Analyzing 6K rows by filtering out from 7.2 million raw hospital pricing records across three Louisville, Kentucky hospitals to expose negotiation gaps, payer disparities, and contract anomalies.
+      Analyzing 6K rows by filtering out from 7.2 million raw hospital pricing records across three Louisville, Kentucky hospitals to expose negotiation gaps and payer disparities.
     </p>
     <div class="hero-tech">
       <span class="tech-pill">Python</span>
@@ -563,12 +561,12 @@ footer a {
 <!-- CONTEXT -->
 <section class="section-light" id="context">
   <div class="container">
-    <p style="text-align:right;">Check out: <a class="footer-back hosp-stat-val" href="https://github.com/laxmiadh08/Healthcare-Price-Transparency" target="_blank">Github</a></p>
+    <p style="text-align:right; font-size:14px; padding-right:8px margin:0px">Check out: <a class="footer-back" href="https://github.com/laxmiadh08/Healthcare-Price-Transparency" target="_blank">Github</a></p>
   
     <span class="section-eyebrow">Background</span>
   
     <p class="section-body">
-      <i>Since 2021, the CMS Hospital Price Transparency Rule requires every U.S. hospital to publish machine-readable files disclosing their gross charges, cash prices, and payer-negotiated rates. In practice, these files arrive in incompatible formats — some wide with hundreds of payer columns, others long with one row per payer — making cross-hospital comparison nearly impossible without significant data engineering.</i>
+  <i>Since 2021, the CMS Hospital Price Transparency Rule requires every U.S. hospital to publish machine-readable files disclosing their gross charges, cash prices, and payer-negotiated rates. In practice, these files arrive in incompatible formats, somewith hundreds of payer columns, others long with one row per payer, making cross-hospital comparison difficult.</i>
     </p>
     <p class="section-body">
    The original hospital pricing files contained 7,230,075 records combined for three hospitals. For this analysis, the data was narrowed to 49 high-impact healthcare procedures spanning inpatient, outpatient, emergency, laboratory, and pharmacy services, resulting in a curated dataset of approximately 6,681 records optimized for cross-hospital price comparisons.
@@ -610,7 +608,7 @@ footer a {
     <p class="section-body-off" style="margin-top:24px; font-size:0.92rem;">
       Challange: UofL's file used a wide format with one column per payer (379 total), requiring a melt operation to convert 97 rows into 1,940 long-format rows. Norton and Baptist used long format. I used LLM to format these files and consolidate into 13 columns for this analysis.
     </p>
-  <p>Check out code here: <a class="footer-back hosp-stat-val" href="https://github.com/laxmiadh08/Healthcare-Price-Transparency" target="_blank">Github</a></p>
+  <p style="text-align:right; font-size:14px; padding-right:8px margin:0px">Check out code here: <a class="footer-back" href="https://github.com/laxmiadh08/Healthcare-Price-Transparency" target="_blank">Github</a></p>
  <div class="hosp-grid">
       <div class="hosp-card">
         <div class="hosp-name">University of Louisville Health</div>
@@ -680,7 +678,7 @@ footer a {
     <span class="section-eyebrow">Analysis</span>
     <h2 class="section-title">Business Questions:</h2>
 
-    <ul class="bq-list">
+   <ul class="bq-list">
       <li class="bq-item">
         <span class="bq-text">Which hospital charges the highest gross charge for the same CPT code and how does their negotiated rate compare to competitors?</span>
       </li>
@@ -688,13 +686,13 @@ footer a {
         <span class="bq-text">For which procedures does the negotiated rate exceed the gross charge and which payers and hospitals are involved?</span>
       </li>
       <li class="bq-item">
-        <span class="bq-text">Which payer consistently negotiates the lowest rates, and which plan type (Medicare Advantage, Commercial, Managed Medicaid) gets the deepest discount?</span>
+        <span class="bq-text">Which payer consistently negotiates the lowest rates, and which plan type gets the deepest discount?</span>
       </li>
       <li class="bq-item">
         <span class="bq-text">How does the cash price compare to the minimum negotiated rate are uninsured patients paying more than the best-insured patients?</span>
       </li>
       <li class="bq-item">
-        <span class="bq-text">Which procedures show the widest min-to-max negotiated rate spread, indicating the most volatile or inconsistent payer contracting?</span>
+        <span class="bq-text">Which procedures show the widest min-to-max negotiated rate spread?</span>
       </li>
       <li class="bq-item">
         <span class="bq-text">How complete is each hospital's gross charge disclosure and does incomplete disclosure correlate with higher negotiated rates?</span>
@@ -722,7 +720,7 @@ footer a {
     <span class="section-eyebrow">Analysis: Key Findings</span>
 
 
-      <div class="finding-card insight">
+  <div class="finding-card insight">
         <div class="finding-title">Cash Patients Pay $1,800 More Than Best Payer Rate</div>
         <div class="finding-body">
           On average, the minimum payer-negotiated rate across all procedures is $1,800 lower than the cash price charged to uninsured patients. For the highest-cost procedures, this gap widens dramatically, uninsured patients face not the gross charge sticker price, but a cash price that still substantially exceeds what even the most expensive insurer pays.
@@ -730,22 +728,21 @@ footer a {
         <div class="finding-stat">$1,800 avg premium for uninsured</div>
       </div>
   
-     <h2 style="margin-top:16px;margin-bottom:0px; font-weight:700">Price Transparency Gap </h2>
+   <h2 style="margin-top:16px;margin-bottom:0px; font-weight:700">Price Transparency Gap </h2>
     <div class="img-frame" style="margin-top:8px;">
         <img src="/images/price-transparency/price-gap.png?raw=true" alt="Hospital Comparison" class="project-image" />
     </div>
     
-     <div class="img-frame" style="margin-top:8px;">
+  <div class="img-frame" style="margin-top:8px;">
             <img src="/images/price-transparency/comparison-price-gap.png?raw=true" alt="Hospital Comparison" class="project-image" />
-            </div>
-            <p>Trend Line: Black, Ratio Line: Purple</p>
-
-      <h2 style="margin-top:28px;margin-bottom:0px; font-weight:700">25 Most expensive procedures by hospital </h2>
+    </div>
+           
+  <h2 style="margin-top:28px;margin-bottom:0px; font-weight:700">25 Most expensive procedures by hospital </h2>
 <div class="img-frame" style="margin-top:8px;">
         <img src="/images/price-transparency/expensive-gross.png?raw=true" alt="Hospital Comparison" class="project-image" />
         </div>
 
-        <h2 style="margin-top:28px;margin-bottom:0px; font-weight:700">Gross charge and Average Negotiated Rates overview </h2>
+  <h2 style="margin-top:28px;margin-bottom:0px; font-weight:700">Gross charge and Average Negotiated Rates overview </h2>
     <div class="img-frame" style="margin-top:8px;">
             <img src="/images/price-transparency/3_comparison.png?raw=true" alt="Hospital Comparison" class="project-image" />
             </div> 
@@ -763,12 +760,12 @@ footer a {
           Norton Hospital's procedures (CPT codes 291, 292, 193, 310, 603, 872) cluster tightly along the diagonal reference line across the $10K–$40K gross charge range. Payers are achieving minimal discounts off Norton's list price.
         </div>
         
-      </div>
+   </div>
       
-      <div class="finding-card good">
+  <div class="finding-card good">
         <div class="finding-title">CPT 470:74% Discount on Joint Replacement</div>
         <div class="finding-body">
-          CPT 470 (Major Joint Replacement - hip/knee) at Baptist Health shows the deepest payer discount in the dataset. With a gross charge of $122,570 and an average negotiated rate of $31,844, payers achieved approximately a 74% reduction from list price, the furthest dot below the diagonal.
+          CPT 470 (Major Joint Replacement - hip/knee) at Baptist Health shows the deepest payer discount in the dataset. With a gross charge of $122,570 and an average negotiated rate of $31,844, payers achieved approximately a 74% reduction from list price.
         </div>
         <div class="finding-stat">74% below gross charge</div>
       </div>
@@ -776,7 +773,7 @@ footer a {
 
         
 
-      <div class="finding-card warning">
+  <div class="finding-card warning">
         <div class="finding-title">18% Gross Charge Non-Disclosure at Norton &amp; UofL</div>
         <div class="finding-body">
           Baptist Health disclosed gross charges for 100% of procedure rows. Norton Hospital disclosed 83.24% and UofL Health 82.16%, leaving approximately 1 in 6 rows without a gross charge.
@@ -786,7 +783,7 @@ footer a {
 
       
  
- 
+
 <div class="finding-card flag">
         <div class="finding-title">CPT 470 Skews All Hospital-Level Averages</div>
         <div class="finding-body">

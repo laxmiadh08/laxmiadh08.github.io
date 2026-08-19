@@ -17,13 +17,15 @@ permalink: /
   --text-dark:   #333333;
   --border:      #E5E7EB;
 }
-
+--font-display: 'Fraunces', Georgia, serif;
+--font-body:     'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    /* Scale */
 /*  RESET & BASE ─*/
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
-  font-family: Georgia, 'Times New Roman', serif ;
-  background: var(--off-white);
+  /* font-family: Georgia, 'Times New Roman', serif ; */
+  /* background: var(--off-white); */
   color: var(--text-dark);
   line-height: 1.7;
 }
@@ -50,10 +52,11 @@ body {
   color: var(--coral);
   display: block;
   margin-bottom: 8px;
+  font-weight:bold;
 }
 
 .home-name {
-  font-family: system-ui, -apple-system, sans-serif !important;
+  /* font-family: system-ui, -apple-system, sans-serif !important; */
   font-size: clamp(2.4rem, 6vw, 2.8rem) !important;
   font-weight: 900!important;
   color: var(--navy) !important;
@@ -79,7 +82,7 @@ body {
 }
 
 .tech-pill {
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  /* font-family: 'JetBrains Mono', 'Courier New', monospace; */
   font-size: 0.73rem;
   background: rgb(249, 227, 205);
   border: 1px solid rgb(255, 167, 45);
@@ -94,17 +97,9 @@ body {
   margin: 0 auto;
   padding: 24px 0px;
 }
-
-.section-title{
-  font-size: 1.5rem;
-  color:#333;
-  font-weight:600;
-  margin-bottom: 10px;
-}
-
 .section-title {
-  font-size: 1.75rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 800!important;
   letter-spacing: -0.02em;
   color:#767676!important;
   margin: 0 0 32px 0;
@@ -142,6 +137,8 @@ body {
   transition: box-shadow 0.2s, transform 0.2s;
   text-decoration: none;
   color: inherit;
+  width:500px;
+  height:310px;
 }
 
 .project-card:hover {
@@ -171,6 +168,7 @@ body {
   font-weight: 700!important;
   color: #333333 !important;
   margin: 0 !important;
+  line-height: 1.25 !important;
 }
 
 .project-card-desc {
@@ -205,6 +203,8 @@ body {
 .edu-section {
   background: var(--white);
   padding: 0;
+  margin-top: 3rem;
+  margin-bottom:2rem
 }
 
 .edu-inner {
@@ -240,7 +240,7 @@ body {
 .edu-school {
   font-size: 1rem;
   color: #333;
-  font-family: system-ui, sans-serif;
+  /* font-family: system-ui, sans-serif; */
   margin: 0;
 }
 
@@ -259,7 +259,7 @@ body {
 .connect-section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 54px 32px 72px;
+  /* padding: 54px 32px 72px; */
 }
 
 .connect-row {
@@ -333,6 +333,69 @@ body {
   }
 }
 }
+.techs{
+  display:flex;
+  align-items: center;
+}
+ /* ============================================================
+     BANNER
+     ============================================================ */
+  .stack-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 1.5rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+ 
+  .stack-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+ 
+  .stack-item img {
+    width: 161px;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+ 
+  /* placeholder box shown until a real logo image is added */
+  .stack-item__placeholder {
+     height: 60px;
+   /* width: 40px; */
+    /* border: 1px dashed #B9B9B9; */
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    color: #8A8A8A;
+    text-align: center;
+    flex-shrink: 0;
+  }
+ 
+  .stack-item span {
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: #333333;
+    white-space: nowrap;
+  }
+ 
+  /* ============================================================
+     RESPONSIVE
+     ============================================================ */
+  @media (max-width: 640px) {
+    .stack-banner { gap: 1.75rem; }
+    .stack-item span { font-size: 1.1rem; }
+    .stack-item img,
+    .stack-item__placeholder { height: 32px; width: 32px; }
+  }
+
 </style>
 
 <!--  HERO -->
@@ -341,7 +404,7 @@ body {
     <span class="home-eyebrow">Data Analyst · Louisville, KY</span>
     <h1 class="home-name">Laxmi Adhikari </h1>
     <p class="home-about">
-      I enjoy making sense of complex information and finding patterns. My background in business analysis, UX design, and business analytics has shaped a structured and detail-oriented approach to problem solving. Outside of analytics, hiking is my favorite way to disconnect and recharge.
+      I enjoy making sense of complex information and finding patterns. I’m fueled by the belief that good data can help us understand problems, make better decisions, and create meaningful change. Outside of analytics,🌿 hiking is my favorite way to disconnect and recharge 🍂🍁.
     </p>
 
   <div class="connect-row">
@@ -355,18 +418,6 @@ body {
       Resume 
     </a>
   </div>
-  
-    <div class="home-tech-stack">
-      <span class="tech-pill">Python</span>
-      <span class="tech-pill">Power BI</span>
-      <span class="tech-pill">DAX</span>
-      <span class="tech-pill">SQL</span>
-      <span class="tech-pill">Data Modeling</span>
-      <span class="tech-pill">Star Schema</span>
-      <span class="tech-pill">Excel</span>
-    </div>
-    
-  </div>
 </div>
 
 <!--  PROJECTS ─-->
@@ -377,62 +428,44 @@ body {
     <!-- Project 1 — Healthcare Pricing -->
 
 
+<!--
 <a href="/projects/price" class="project-card-link">
   <div class="project-card">
-    <!-- <img src="/images/price-transparency/thumb1.png" alt="Healthcare Pricing Dashboard"> -->
+    <img src="/images/price-transparency/thumb1.png" alt="Healthcare Pricing Dashboard">
 
   <div class="project-card-body">
       <h3 class="project-card-title">Healthcare Pricing Disparities</h3>
-
-   <p class="project-card-desc">
-        Analyzed negotiated rates, cash prices, and gross charges across 3 major Louisville hospitals — uncovering payer negotiation gaps, and transparency failures.
-      </p>
-
-   <div class="project-card-tags">
-        <span class="tag">Power BI</span>
-        <span class="tag">Python</span>
-        <span class="tag">Star Schema</span>
-        <span class="tag">DAX</span>
-      </div>
-    <span class="project-card-view">
-        View Project →
-      </span>
+<span class="project-card-view">
+    View Project →
+  </span>
     </div>
   </div>
 </a>
- <a class="project-card-link" href="/projects/cdc">
+
+-->
+ <a class="project-card-link" href="/projects/ihd-ky">
     <!-- Project 2 — CDC Heart Disease -->
     <div class="project-card">
-      <!-- <img src="/images/cdc/cdc-thumb.png" alt="Heart Disease Mortality Analysis"> -->
+      <img src="/images/thumbnail/ihd-ky.png" alt="Heart Disease Mortality Analysis">
       <div class="project-card-body">
-        <h3 class="project-card-title">County-Level Heart Disease Mortality</h3>
-        <p class="project-card-desc">
-          Analyzed county-level heart disease mortality disparities across Kentucky to identify high-burden regions and surface geographic patterns in public health outcomes.
-        </p>
-        <div class="project-card-tags">
-          <span class="tag">Excel</span>
-          <span class="tag">Datawrapper</span>
-        </div>
-       <span class="project-card-view">
-        View Project →
-      </span>
+        <h3 class="project-card-title">How Economic Hardship Fuels Kentucky’s Highest Heart Disease Death Rate</h3>
+        <!-- <p class="project-card-desc">
+         A County-Level Analysis of Poverty, Doctor Density, and Cardiovascular Mortality
+        </p> -->
+       <span class="project-card-view">View Project → </span>
       </div>
     </div>
 </a>
     <!-- Project 3 — placeholder -->
  <a class="project-card-link" href="https://github.com/laxmiadh08/Environment-Monitoring-App" target="_blank">
      <div class="project-card">
-      <!-- <img src="/images/cdc/cdc-thumb.png" alt="Heart Disease Mortality Analysis"> -->
+      <img src="/images/thumbnail/etl.png" alt="air quality">
       <div class="project-card-body">
         <h3 class="project-card-title">Environmental Health Monitoring App</h3>
-        <p class="project-card-desc">
+        <!-- <p class="project-card-desc">
         Built an end-to-end ETL pipeline for an environmental health app, integrating live weather and air quality data with health risk insights.
-        </p>
-        <div class="project-card-tags">
-          <span class="tag">Python</span>
-          <span class="tag">PostgreSQL</span>
-           <span class="tag">Supabase</span>
-        </div>
+        </p> -->
+       
        <span class="project-card-view">
         View Project →
       </span>
@@ -443,6 +476,34 @@ body {
   </div>
 </div>
 
+<!-- Featured Tech Stack -->
+ <h2 class="section-title" style=" margin-bottom:14px;">Tools and Technologies </h2>
+<div class="stack-banner">
+ 
+  <div class="stack-item">
+    <div class="stack-item__placeholder"><img src="/images/tools/excel.png" alt="excel-logo"></div>
+    <!-- <span>[Tool 1]</span> -->
+  </div>
+   <div class="stack-item">
+    <div class="stack-item__placeholder"><img src="/images/tools/sql.png" alt="sql-logo"></div>
+    <!-- <span>[Tool 1]</span> -->
+  </div>
+
+ <div class="stack-item">
+    <div class="stack-item__placeholder"><img src="/images/tools/powerbi.png" alt="powerbi-logo"></div>
+    <!-- <span>[Tool 1]</span> -->
+  </div>
+   <div class="stack-item">
+    <div class="stack-item__placeholder"><img src="/images/tools/python.png" alt="python-logo"></div>
+    <!-- <span>[Tool 1]</span> -->
+  </div>
+ <div class="stack-item">
+    <div class="stack-item__placeholder"><img src="/images/tools/github.png" alt="github-logo"></div>
+    <!-- <span>[Tool 1]</span> -->
+  </div>
+
+ 
+</div>
 <!--  EDUCATION -->
 <div class="edu-section">
   <div class="edu-inner">
@@ -452,7 +513,7 @@ body {
       <div>
         <p class="edu-degree">Master of Science in Business Analytics</p>
         <p class="edu-school">University of Louisville · Louisville, KY</p>
-        <span class="edu-expected">Expected July 2026</span>
+    
       </div>
     </div>
   </div>
@@ -460,7 +521,7 @@ body {
 
 <!--  CONNECT -->
 <div class="connect-section">
-  <span class="section-title">Contact</span>
+  <span class="section-title">Let's Connect!</span>
   <!-- <h2 class="section-title">Let's Connect</h2> -->
   <div class="connect-row-b">
     <a class="connect-btn primary-blue" href="https://www.linkedin.com/in/laxmiadh/" target="_blank">
