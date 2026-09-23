@@ -95,14 +95,14 @@ body {
 .home-section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 24px 0px;
+  padding: 4px 0px;
 }
 .section-title {
   font-size: 1.5rem;
   font-weight: 800!important;
   letter-spacing: -0.02em;
   color:#767676!important;
-  margin: 0 0 32px 0;
+  margin: 0 0 16px 0!important;
 }
 
 /*  PROJECT GRID ─*/
@@ -346,7 +346,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
-    padding: 1.5rem 1rem;
+    padding: .15rem 1rem;
     max-width: 1100px;
     margin: 0 auto;
   }
@@ -401,7 +401,7 @@ body {
 <!--  HERO -->
 <div class="home-hero">
   <div class="home-hero-inner">
-    <span class="home-eyebrow">Data Analyst · Louisville, KY</span>
+    <span class="home-eyebrow">Business/Data Analyst · Louisville, KY</span>
     <h1 class="home-name">Laxmi Adhikari </h1>
     <p class="home-about">
       I enjoy making sense of complex information and finding patterns. I’m fueled by the belief that good data can help us understand problems, make better decisions, and create meaningful change. Outside of analytics,🌿 hiking is my favorite way to disconnect and recharge 🍂🍁.
